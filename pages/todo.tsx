@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Layout from "../components/Layout";
-import TodoList from "../src/components/list";
-import Edit from "../src/components/edit";
+import Link from 'next/link';
+import Layout from '../components/Layout';
+import TodoList from '../src/components/list';
+import Edit from '../src/components/edit';
 
 const ToDoPage = () => (
   <Layout title="ToDo | Next.js + TypeScript Example">

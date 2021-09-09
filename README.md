@@ -1,6 +1,6 @@
 # Feature
 
-next.jsとreacoilのサンプルを作ってみた
+next.js と reacoil のサンプルを作ってみた
 
 # history
 
@@ -15,7 +15,7 @@ next.jsとreacoilのサンプルを作ってみた
 - tailwindcss
 - react-form-hooks
 
-reduxは [re-ducks](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/)
+redux は [re-ducks](https://www.freecodecamp.org/news/scaling-your-redux-app-with-ducks-6115955638be/)
 パターンというものでサンプルを作ってみた。
 
 # References
@@ -43,7 +43,3 @@ We suggest that you begin by typing:
 cd next-recoil-sample
 yarn dev
 ```
-
-
-
-

@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
 export type Todo = {
   id: string;
@@ -9,7 +9,7 @@ export type Todo = {
 
 // Todoリストを保持
 const todoListState = atom<Todo[]>({
-  key: "todoListState",
+  key: 'todoListState',
   default: [],
 });
 

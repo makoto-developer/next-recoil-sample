@@ -1,7 +1,7 @@
-import { useSetRecoilState } from "recoil";
-import { todoListState } from "../atoms/states";
-import { format } from "date-fns";
-import { useForm } from "react-hook-form";
+import { useSetRecoilState } from 'recoil';
+import { todoListState } from '../atoms/states';
+import { format } from 'date-fns';
+import { useForm } from 'react-hook-form';
 
 type FormData = {
   id: string;
@@ -20,11 +20,11 @@ const Edit: React.FC = () => {
     formState: { errors },
     reset,
   } = useForm<FormData>({
-    mode: "onChange",
+    mode: 'onChange',
     defaultValues: {
-      id: format(new Date(2020, 9, 1, 0, 0, 0), "yyyy-MM-dd-hh-mm-ss"),
-      title: "",
-      text: "",
+      id: format(new Date(2020, 9, 1, 0, 0, 0), 'yyyy-MM-dd-hh-mm-ss'),
+      title: '',
+      text: '',
       isComplete: false,
     },
   });
@@ -41,11 +41,11 @@ const Edit: React.FC = () => {
         type="text"
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         placeholder="題名"
-        {...register("title", {
-          required: "必須項目です",
+        {...register('title', {
+          required: '必須項目です',
           maxLength: {
             value: 20,
-            message: "20文字以内で入力してください",
+            message: '20文字以内で入力してください',
           },
         })}
       />
@@ -58,11 +58,11 @@ const Edit: React.FC = () => {
         type="text"
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         placeholder="やることを書く"
-        {...register("text", {
-          required: "必須項目です",
+        {...register('text', {
+          required: '必須項目です',
           maxLength: {
             value: 20,
-            message: "20文字以内で入力してください",
+            message: '20文字以内で入力してください',
           },
         })}
       />
